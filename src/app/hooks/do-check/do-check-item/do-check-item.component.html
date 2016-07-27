@@ -1,0 +1,27 @@
+
+<ul class="media-list">
+  <li class="media">
+    <a class="pull-left" *ngIf="comment.author">
+      <img class="media-object" [src]="'app/images/avatar_'+comment.author.avatar+'.png'" alt="Avatar" style="width:64px;height:64px;">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">
+        <a class="user">{{ comment.author.name }}</a>
+        <span class="small"> posted a comment <strong>1 Hour Ago</strong></span></h4>
+      <p>{{ comment.comment }}</p>
+    </div>
+    <div class="pull-left">
+      
+      <button (click)="remove()"  class="btn btn-danger">
+        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Remove
+      </button>
+      <button (click)="clear()" class="btn btn-default">
+        <span class="glyphicon glyphicon-erase" aria-hidden="true"></span> Clear
+      </button>
+      <button (click)="like()" class="btn btn-primary">
+        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> {{ comment.likes }} Likes
+      </button>
+      
+    </div>
+  </li>
+</ul>

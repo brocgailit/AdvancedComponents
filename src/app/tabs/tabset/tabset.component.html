@@ -1,0 +1,13 @@
+
+<div role="tabpanel">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li *ngFor="let tab of tabs" role="presentation" [class.active]="tab.active">
+            <a aria-controls="home" role="tab" data-toggle="tab" (click)="setActive(tab)">{{tab.title}}</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <ng-content></ng-content>
+
+</div>

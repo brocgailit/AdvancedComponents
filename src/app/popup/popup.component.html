@@ -1,0 +1,16 @@
+
+<div class="panel panel-info" popup message="Clicked the message" #pop1="popup">
+    <div class="panel-heading">
+      <h3 class="panel-title">Learning Directives</h3>
+    </div>
+    <div class="panel-body">
+      This should use our popup directive
+    </div>
+</div>
+
+<span class="glyphicon glyphicon-bell" aria-hidden="true" popup message="clicked the alarm icon" #pop2="popup"></span>
+
+
+<button type="button" class="btn btn-lg btn-primary" (click)="pop1.displayMessage()">Message</button>
+
+<button type="button" class="btn btn-lg btn-default" (click)="pop2.displayMessage()">Icon</button>

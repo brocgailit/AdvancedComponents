@@ -1,0 +1,42 @@
+<h4>
+  OnInit and OnDestroy
+</h4>
+
+<button (click)="toggle()" type="button" class="btn btn-primary">Toggle</button>
+<on-init *ngIf="display"></on-init>
+
+<hr>
+
+<h4>OnChange</h4>
+
+<div role="form">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input #nameField
+      [value]="name" 
+      (keyup)="setValues(nameField, commentField)"
+      type="text" 
+      class="form-control" 
+      id="name" 
+      placeholder="Name">
+  </div>
+
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea #commentField
+      (keyup)="setValues(nameField, commentField)"
+      rows="2"
+      class="form-control" 
+      id="comment" 
+      placeholder="Comment">{{ comment }}</textarea>
+  </div>
+
+</div>
+
+<on-change [name]="name" [comment]="comment"></on-change>
+
+<hr>
+
+<h4>OnCheck</h4>
+<do-check></do-check>

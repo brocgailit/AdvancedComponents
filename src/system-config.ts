@@ -36,6 +36,17 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/popup',
+  'app/transclusion',
+  'app/message',
+  'app/tabs',
+  'app/tabs/tab',
+  'app/tabs/tabset',
+  'app/hooks',
+  'app/hooks/toggle-init',
+  'app/hooks/on-change',
+  'app/hooks/do-check',
+  'app/hooks/do-check/do-check-item',
   /** @cli-barrel */
 ];
 
