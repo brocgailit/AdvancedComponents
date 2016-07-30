@@ -8,7 +8,7 @@ import { Component, Input, OnChanges, OnInit, SimpleChange } from '@angular/core
 })
 export class OnChangeComponent implements OnInit, OnChanges {
 
-  @Input('name') name: string = '';
+  @Input('name') name: string;
   @Input('comment') comment: string;
 
   constructor() { }

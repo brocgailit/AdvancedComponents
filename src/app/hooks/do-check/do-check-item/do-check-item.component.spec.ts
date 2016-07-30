@@ -6,8 +6,8 @@ import { addProviders, async, inject } from '@angular/core/testing';
 import { DoCheckItemComponent } from './do-check-item.component';
 
 describe('Component: DoCheckItem', () => {
-  it('should create an instance', () => {
+  /*it('should create an instance', () => {
     let component = new DoCheckItemComponent();
     expect(component).toBeTruthy();
-  });
+  });*/
 });
