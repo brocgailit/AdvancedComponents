@@ -12,13 +12,13 @@
     </div>
     <div class="pull-left">
       
-      <button (click)="remove()"  class="btn btn-danger">
+      <button type="button" (click)="remove()"  class="btn btn-sm btn-danger">
         <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Remove
       </button>
-      <button (click)="clear()" class="btn btn-default">
+      <button type="button" (click)="clear()" class="btn btn-sm btn-default">
         <span class="glyphicon glyphicon-erase" aria-hidden="true"></span> Clear
       </button>
-      <button (click)="like()" class="btn btn-primary">
+      <button type="button" (click)="like()" class="btn btn-sm btn-primary">
         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> {{ comment.likes }} Likes
       </button>
       
