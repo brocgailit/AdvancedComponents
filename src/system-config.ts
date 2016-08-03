@@ -47,6 +47,7 @@ const barrels: string[] = [
   'app/hooks/on-change',
   'app/hooks/do-check',
   'app/hooks/do-check/do-check-item',
+  'app/hooks/afters',
   /** @cli-barrel */
 ];
 
